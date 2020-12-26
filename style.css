@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+p{
+    font-size: 1.3rem;
+}
+ul {
+    list-style: none;
+}
+nav {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 22rem;
+    background: #1D1D22;
+    padding-top:60px;
+    overflow-y: auto;  
+}
+nav ul li{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+nav ul li:hover {
+    background: rgba(3,3,3,0.6);
+    color: cyan;
+    padding-left: 1.5rem; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.9);
+}
+nav ul li a:hover{
+    color: cyan;
+}
+#main-doc {
+    display: block;
+    margin-left: 22rem;
+}
+#main-doc header{
+    text-align: center;
+    line-height: 1.6;
+    padding: 2rem 4rem 1rem 5rem;
+    background: #2d2727;
+    border-bottom: 1px solid silver;
+}
+#main-doc header h1{
+    font-size: 3rem;
+    color: #fff; 
+    text-shadow: 3px 3px 3px #2d2727;
+    /* text-shadow: 3px 3px 3px gold; */
+}
+#main-doc header p{
+    color: goldenrod; 
+    font-family: 'Yeon Sung', cursive;
+}
+section {
+    margin: 2rem;
+}
+section h3{
+    padding: 0.2rem 0;
+    font-size: 2rem;
+    color: gray;
+}
+section p{
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    /* display: inline-block; */
+    padding: 0.6rem 0;
+}
+.crypto_names  {
+    padding: 0 3rem;
+}
+ul li{
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+}
+#uses .reasons {
+    padding: 1rem 3rem;
+    line-height: 1;
+}
+.ref {
+    padding:0 3rem;
+}
+
+@media all and (max-width:600px){
+    nav {
+        display: none;
+    }
+    #main-doc {
+        width: 100%;
+        margin-left: 0;
+    }
+    #main-doc header {
+        line-height: 1.4;
+        padding: 2rem 4rem 1rem 2rem;
+    }
+    section h3 {
+        text-align: center;
+    }
+}
+
+
